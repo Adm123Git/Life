@@ -1,0 +1,138 @@
+* {
+    color: #666666;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100% !important;
+    margin: 0;
+}
+
+#root {
+    margin: 20px;
+    min-height: 100% !important;
+}
+
+/*ol, ul {*/
+/*    padding-left: 30px;*/
+/*}*/
+
+/*.board-row:after {*/
+/*    clear: both;*/
+/*    content: "";*/
+/*    display: table;*/
+/*}*/
+
+/*.status {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+.cell {
+    border: 1px solid #999;
+    float: left;
+    font-size: 6px;
+    line-height: 10px;
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
+.cell:focus, input:focus {
+    outline: none;
+}
+
+/*.kbd-navigation .cell:focus {*/
+/*    background: #ddd;*/
+/*}*/
+
+#drive, #field {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+#field {
+    flex-grow: 1;
+}
+
+#drive {
+    width: 280px;
+}
+
+#game {
+    width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+div.game-line {
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+}
+
+.field-side-line {
+    display: inline-flex;
+}
+
+.cell-dead {
+    background: aliceblue;
+}
+
+.cell-live {
+    background: red;
+}
+
+button.drive {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin: 10px 5px 5px;
+    border: 1px #999999 solid;
+    border-radius: 4px;
+}
+
+button.enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+div.input-block, div.input-container  {
+    border-radius: 4px;
+    margin: 0 -5px 5px 5px;
+    padding: 5px 10px 5px 5px;
+    font-size: 12px;
+}
+
+div.input-container {
+    border: 1px #999999 solid;
+}
+
+div.input-block div.input-container  {
+    border-radius: 4px;
+    margin: 1px -10px -5px -5px;
+    padding: 5px 10px 5px 5px;
+    font-size: 12px;
+}
+
+div.input-container input {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
